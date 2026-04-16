@@ -307,5 +307,125 @@
     "back": "Atrás",
     "next": "Siguiente",
     "finish": "Enviar Solicitud"
+  },
+  "Errors": {
+    "title": "Algo salió mal",
+    "description": "Ha ocurrido un error inesperado. Nuestro equipo ya fue notificado.",
+    "retry": "Intentar de nuevo",
+    "notFound_title": "Página no encontrada",
+    "notFound_description": "Lo sentimos, la página que buscás no existe o fue movida.",
+    "notFound_back": "Volver al inicio"
+  },
+  "Diagnostico": {
+    "meta": {
+      "title": "Diagnóstico Operativo — Le Sous Chef",
+      "description": "20 preguntas. Tu cocina responde. Un diagnóstico honesto de dónde estás sólido y dónde se te escapa margen."
+    },
+    "intro": {
+      "eyebrow": "DIAGNÓSTICO OPERATIVO",
+      "title": "20 preguntas. Tu cocina responde.",
+      "description": "Un repaso sincero de seis áreas operativas de tu restaurante. Al final ves dónde estás sólido y dónde se te escapa margen. Sin humo y sin registro.",
+      "bullets": {
+        "0": "20 preguntas en seis áreas: costos, cocina, sala, equipo, digital, legal.",
+        "1": "Entre 6 y 8 minutos. Podés responder desde el teléfono, incluso entre servicios.",
+        "2": "El resultado te llega por correo. Guardamos solo tu email y tu puntaje."
+      },
+      "time_note": "6–8 min · 20 preguntas · 4 respuestas posibles",
+      "cta_start": "Empezar diagnóstico"
+    },
+    "progress": {
+      "area_of": "Área {current} de {total}",
+      "question_of": "Pregunta {current} de {total}"
+    },
+    "answers": {
+      "yes": "Sí",
+      "partial": "Más o menos",
+      "no": "No",
+      "dk": "No sé"
+    },
+    "areas": {
+      "costos": {
+        "name": "Costos",
+        "description": "Escandallo, food cost y margen real."
+      },
+      "cocina": {
+        "name": "Cocina",
+        "description": "Recetas del pass, merma e inventario."
+      },
+      "sala": {
+        "name": "Sala",
+        "description": "Reservas, no-shows y ticket medio."
+      },
+      "equipo": {
+        "name": "Equipo",
+        "description": "Brigada, roles y delegación."
+      },
+      "digital": {
+        "name": "Digital",
+        "description": "Google, reseñas y canal directo."
+      },
+      "legal": {
+        "name": "Legal",
+        "description": "Contratos, APPCC y licencias."
+      }
+    },
+    "questions": {
+      "costos-1": "¿Tenés el escandallo actualizado de todos los platos de la carta?",
+      "costos-2": "¿Conocés el food cost real de la semana pasada, no estimado?",
+      "costos-3": "¿Revisás precios con proveedores al menos cada 90 días?",
+      "costos-4": "¿Sabés hoy qué tres platos dejan menos margen?",
+      "cocina-1": "¿Las recetas del pass están escritas y accesibles para toda la brigada?",
+      "cocina-2": "¿Controlás la merma y las bajas de cada servicio?",
+      "cocina-3": "¿El inventario físico cierra con el digital al menos una vez al mes?",
+      "sala-1": "¿Medís no-shows y cancelaciones por canal de reserva?",
+      "sala-2": "¿Tu política de reservas y depósitos está escrita y la aplica toda la sala?",
+      "sala-3": "¿Sabés el ticket medio por servicio de esta semana sin abrir diez archivos?",
+      "equipo-1": "¿Cada puesto tiene un responsable claro por turno?",
+      "equipo-2": "¿Podés delegar un servicio completo sin estar vos en el pass?",
+      "equipo-3": "¿El onboarding de un cocinero nuevo lleva menos de una semana?",
+      "equipo-4": "¿La brigada sabe qué hacer si vos o el chef faltan un día?",
+      "digital-1": "¿Tu ficha de Google está al día: horarios, carta y fotos de los últimos 60 días?",
+      "digital-2": "¿Respondés reseñas, buenas y malas, en menos de 48 horas?",
+      "digital-3": "¿Tenés claro cada mes qué canal te trae más reservas directas?",
+      "legal-1": "¿Los contratos y las horas reales del equipo están al día?",
+      "legal-2": "¿APPCC y trazabilidad de alérgenos están documentados y accesibles?",
+      "legal-3": "¿Estás al día con licencias, seguros y altas de actividad?"
+    },
+    "nav": {
+      "back": "Atrás",
+      "next": "Siguiente",
+      "finish": "Ver mi diagnóstico"
+    },
+    "capture": {
+      "eyebrow": "Último paso",
+      "title": "¿A qué correo te enviamos tu diagnóstico?",
+      "description": "Guardamos solo tu email y tu puntaje. No lo compartimos con nadie y no te llenamos la bandeja.",
+      "email_label": "Email",
+      "email_placeholder": "tu@email.com",
+      "cta": "Enviame mi diagnóstico",
+      "cta_sending": "Enviando…",
+      "privacy_note": "Sin spam. Te escribimos solo si abrimos acceso a Le Sous Chef o tenemos algo concreto y útil para tu operación.",
+      "error": "No pudimos enviarte el diagnóstico. Probá de nuevo en un minuto.",
+      "rate_limit": "Ya enviamos un diagnóstico a ese correo hoy. Revisá tu bandeja."
+    },
+    "results": {
+      "eyebrow": "Tu diagnóstico",
+      "title": "Así está tu operación hoy.",
+      "score_label": "Puntaje global",
+      "score_suffix": "sobre {total}",
+      "weak_title": "Dónde se te escapa el margen",
+      "weak_description": "Las áreas con puntaje más bajo son las que más rápido te devuelven dinero si las ordenás primero.",
+      "strong_title": "Dónde estás sólido",
+      "no_weak": "Ninguna área está en rojo. Tu base operativa está ordenada.",
+      "sent_note": "También te lo enviamos por correo a {email}.",
+      "cta_primary": "Avisame cuando abra Le Sous Chef",
+      "cta_secondary": "Volver al inicio"
+    },
+    "teaser": {
+      "eyebrow": "DIAGNÓSTICO OPERATIVO · GRATIS",
+      "title": "20 preguntas. Tu cocina responde.",
+      "description": "Seis áreas operativas. Seis o siete minutos. Un diagnóstico honesto de dónde estás sólido y dónde se te escapa margen.",
+      "cta": "Empezar diagnóstico"
+    }
   }
 }
