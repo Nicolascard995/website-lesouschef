@@ -436,5 +436,18 @@
       "heading": "Acá está tu diagnóstico operativo.",
       "outro": "Si querés que te avisemos cuando abra Le Sous Chef, respondé a este correo o usá el botón de abajo."
     }
+  },
+  "ProductSection": {
+    "badge": "Descarga gratuita",
+    "title": "Food Cost Tracker",
+    "subtitle": "Control semanal de costos. Mermas integradas. Alertas automáticas.",
+    "cta_lang_es": "Español",
+    "cta_lang_en": "English",
+    "cta_lang_de": "Deutsch",
+    "slide_1": "¿Sabés cuánto vendiste esta semana? ¿Y cuánto te costó realmente producirlo?",
+    "slide_2": "Las mermas que no registrás son el costo que no ves en tu margen.",
+    "slide_3": "Control semanal por categoría — carnes, pescados, verduras — en un solo archivo.",
+    "slide_4": "Alerta automática cuando el food cost supera tu objetivo. Sin fórmulas manuales.",
+    "slide_5": "Actualizás el precio en Proveedores y se propaga a todo el tracker."
   }
 }

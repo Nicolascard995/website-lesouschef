@@ -436,5 +436,18 @@
       "heading": "Here's your operational audit.",
       "outro": "If you want a heads-up when Le Sous Chef opens, just reply to this email or tap the button below."
     }
+  },
+  "ProductSection": {
+    "badge": "Free download",
+    "title": "Food Cost Tracker",
+    "subtitle": "Weekly food cost control. Integrated waste tracking. Automatic alerts.",
+    "cta_lang_es": "Español",
+    "cta_lang_en": "English",
+    "cta_lang_de": "Deutsch",
+    "slide_1": "Do you know how much you sold this week? Do you know what it actually cost to make?",
+    "slide_2": "The waste you don't log is the cost you don't see in your margin.",
+    "slide_3": "Weekly control by category — meat, fish, produce — in one file.",
+    "slide_4": "Automatic alert when food cost exceeds your target. No manual formulas.",
+    "slide_5": "Update a price in Suppliers and it propagates to the entire tracker."
   }
 }

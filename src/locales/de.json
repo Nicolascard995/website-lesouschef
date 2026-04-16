@@ -436,5 +436,18 @@
       "heading": "Hier ist deine Betriebsdiagnose.",
       "outro": "Wenn du Bescheid bekommen willst, sobald Le Sous Chef öffnet, antworte auf diese Mail oder klick auf den Button unten."
     }
+  },
+  "ProductSection": {
+    "badge": "Kostenloser Download",
+    "title": "Food Cost Tracker",
+    "subtitle": "Wöchentliche Kostenkontrolle. Schwund integriert. Automatische Alarme.",
+    "cta_lang_es": "Español",
+    "cta_lang_en": "English",
+    "cta_lang_de": "Deutsch",
+    "slide_1": "Weißt du, wie viel du diese Woche umgesetzt hast? Und was es wirklich gekostet hat?",
+    "slide_2": "Schwund, den du nicht erfasst, ist Kosten, die du in deiner Marge nicht siehst.",
+    "slide_3": "Wöchentliche Kontrolle nach Kategorie — Fleisch, Fisch, Gemüse — in einer Datei.",
+    "slide_4": "Automatischer Alarm, wenn die Food-Cost-Quote dein Ziel überschreitet.",
+    "slide_5": "Preis in Lieferanten aktualisieren — wird im gesamten Tracker übernommen."
   }
 }
