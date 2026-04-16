@@ -307,5 +307,125 @@
     "back": "Back",
     "next": "Next",
     "finish": "Submit Application"
+  },
+  "Errors": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Our team has been notified.",
+    "retry": "Try again",
+    "notFound_title": "Page not found",
+    "notFound_description": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "notFound_back": "Back to home"
+  },
+  "Diagnostico": {
+    "meta": {
+      "title": "Operational Audit — Le Sous Chef",
+      "description": "20 questions. Your kitchen answers. An honest read of where you're solid and where margin is leaking."
+    },
+    "intro": {
+      "eyebrow": "OPERATIONAL AUDIT",
+      "title": "20 questions. Your kitchen answers.",
+      "description": "An honest run-through of six operational areas in your restaurant. At the end you see where you're solid and where margin is leaking. No fluff. No sign-up.",
+      "bullets": {
+        "0": "20 questions across six areas: costs, kitchen, front of house, team, digital, legal.",
+        "1": "Six to eight minutes. You can answer from your phone, even between services.",
+        "2": "The result lands in your inbox. We only keep your email and your score."
+      },
+      "time_note": "6–8 min · 20 questions · 4 possible answers",
+      "cta_start": "Start audit"
+    },
+    "progress": {
+      "area_of": "Area {current} of {total}",
+      "question_of": "Question {current} of {total}"
+    },
+    "answers": {
+      "yes": "Yes",
+      "partial": "Partial",
+      "no": "No",
+      "dk": "Don't know"
+    },
+    "areas": {
+      "costos": {
+        "name": "Costs",
+        "description": "Recipe costing, food cost and real margin."
+      },
+      "cocina": {
+        "name": "Kitchen",
+        "description": "Pass recipes, waste and inventory."
+      },
+      "sala": {
+        "name": "Front of house",
+        "description": "Bookings, no-shows and average check."
+      },
+      "equipo": {
+        "name": "Team",
+        "description": "Brigade, roles and delegation."
+      },
+      "digital": {
+        "name": "Digital",
+        "description": "Google, reviews and direct channel."
+      },
+      "legal": {
+        "name": "Legal",
+        "description": "Contracts, HACCP and licenses."
+      }
+    },
+    "questions": {
+      "costos-1": "Do you have an up-to-date recipe costing sheet for every dish on the menu?",
+      "costos-2": "Do you know your real food cost from last week — not estimated?",
+      "costos-3": "Do you review supplier prices at least every 90 days?",
+      "costos-4": "Do you know today which three dishes leave the thinnest margin?",
+      "cocina-1": "Are pass recipes written down and accessible to the whole brigade?",
+      "cocina-2": "Do you track waste and write-offs every service?",
+      "cocina-3": "Does your physical inventory reconcile with the digital count at least once a month?",
+      "sala-1": "Do you measure no-shows and cancellations per booking channel?",
+      "sala-2": "Is your reservation and deposit policy written down and applied by the whole front of house?",
+      "sala-3": "Do you know this week's average check per service without opening ten files?",
+      "equipo-1": "Does each station have a clear shift owner?",
+      "equipo-2": "Can you hand off a full service without being on the pass yourself?",
+      "equipo-3": "Does onboarding a new cook take less than a week?",
+      "equipo-4": "Does the brigade know what to do if you or the chef are out for a day?",
+      "digital-1": "Is your Google Business Profile up to date — hours, menu and photos from the last 60 days?",
+      "digital-2": "Do you reply to reviews, good and bad, within 48 hours?",
+      "digital-3": "Each month, do you know which channel brings you the most direct bookings?",
+      "legal-1": "Are contracts and actual team hours up to date?",
+      "legal-2": "Are HACCP and allergen traceability documented and accessible?",
+      "legal-3": "Are you current on licenses, insurance and activity registrations?"
+    },
+    "nav": {
+      "back": "Back",
+      "next": "Next",
+      "finish": "See my diagnosis"
+    },
+    "capture": {
+      "eyebrow": "Last step",
+      "title": "Where should we send your diagnosis?",
+      "description": "We only keep your email and your score. We don't share it with anyone and we don't flood your inbox.",
+      "email_label": "Email",
+      "email_placeholder": "you@email.com",
+      "cta": "Send me my diagnosis",
+      "cta_sending": "Sending…",
+      "privacy_note": "No spam. We only write when we open access to Le Sous Chef or have something concrete and useful for your operation.",
+      "error": "We couldn't send your diagnosis. Try again in a minute.",
+      "rate_limit": "We already sent a diagnosis to that email today. Check your inbox."
+    },
+    "results": {
+      "eyebrow": "Your diagnosis",
+      "title": "Where your operation stands today.",
+      "score_label": "Overall score",
+      "score_suffix": "of {total}",
+      "weak_title": "Where margin is leaking",
+      "weak_description": "The lowest-scoring areas return money fastest when you fix them first.",
+      "strong_title": "Where you're solid",
+      "no_weak": "Nothing is in the red. Your operational base is in order.",
+      "sent_note": "We also sent this to {email}.",
+      "cta_primary": "Let me know when Le Sous Chef opens",
+      "cta_secondary": "Back to site"
+    },
+    "teaser": {
+      "eyebrow": "OPERATIONAL AUDIT · FREE",
+      "title": "20 questions. Your kitchen answers.",
+      "description": "Six operational areas. Six or seven minutes. An honest read of where you're solid and where margin is leaking.",
+      "cta": "Start audit"
+    }
   }
 }
