@@ -53,6 +53,12 @@ export default function Navbar() {
                             {label}
                         </a>
                     ))}
+                    <Link
+                        href="/diagnostico"
+                        className={`font-mono text-[11px] uppercase tracking-[0.22em] transition-colors ${linkClass}`}
+                    >
+                        {t('diagnostico')}
+                    </Link>
                 </div>
 
                 <div className="hidden md:flex items-center gap-6">
@@ -94,6 +100,13 @@ export default function Navbar() {
                             {label}
                         </a>
                     ))}
+                    <Link
+                        href="/diagnostico"
+                        onClick={() => setIsOpen(false)}
+                        className="font-display italic text-4xl text-ink hover:text-ember transition-colors"
+                    >
+                        {t('diagnostico')}
+                    </Link>
                 </div>
 
                 <div className="mt-14 flex flex-col items-center gap-6">
