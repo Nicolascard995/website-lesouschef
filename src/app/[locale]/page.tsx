@@ -7,6 +7,7 @@ import Methodology from '@/components/sections/Methodology';
 import SolutionsGrid from '@/components/sections/SolutionsGrid';
 import ShieldSection from '@/components/sections/ShieldSection';
 import DiagnosticoTeaser from '@/components/sections/DiagnosticoTeaser';
+import ProductSection from '@/components/sections/ProductSection';
 import BlogCarousel from '@/components/sections/BlogCarousel';
 import Footer from '@/components/layout/Footer';
 
@@ -41,6 +42,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <DiagnosticoTeaser />
             <FounderBanner />
             <AboutSection />
+            <ProductSection />
             <WaitlistSection />
 
             {false && <ShieldSection />}
