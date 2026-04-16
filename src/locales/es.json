@@ -438,9 +438,13 @@
     }
   },
   "ProductSection": {
-    "badge": "Descarga gratuita",
-    "title": "Food Cost Tracker",
+    "badge": "Food Cost Tracker",
+    "title": "Sabés cuánto vendiste. ¿Cuánto te costó producirlo?",
     "subtitle": "Control semanal de costos. Mermas integradas. Alertas automáticas.",
+    "price": "€29",
+    "cta_buy": "Comprar — €29",
+    "cta_soon": "Próximamente",
+    "cta_note": "Disponible en ES, EN, DE · Descarga inmediata",
     "cta_lang_es": "Español",
     "cta_lang_en": "English",
     "cta_lang_de": "Deutsch",
@@ -448,6 +452,17 @@
     "slide_2": "Las mermas que no registrás son el costo que no ves en tu margen.",
     "slide_3": "Control semanal por categoría — carnes, pescados, verduras — en un solo archivo.",
     "slide_4": "Alerta automática cuando el food cost supera tu objetivo. Sin fórmulas manuales.",
-    "slide_5": "Actualizás el precio en Proveedores y se propaga a todo el tracker."
+    "slide_5": "Actualizás el precio en Proveedores y se propaga a todo el tracker.",
+    "gracias": {
+      "title_es": "¡Listo! Elegí tu idioma",
+      "title_en": "Done! Choose your language",
+      "title_de": "Fertig! Wähle deine Sprache",
+      "subtitle_es": "El archivo se descarga inmediatamente.",
+      "subtitle_en": "The file downloads immediately.",
+      "subtitle_de": "Die Datei wird sofort heruntergeladen.",
+      "missing_order_title": "No encontramos tu orden.",
+      "missing_order_body": "Si acabás de comprar, revisá el correo de confirmación con el link.",
+      "back_home": "Volver al inicio"
+    }
   }
 }

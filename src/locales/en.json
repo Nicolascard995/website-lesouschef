@@ -438,9 +438,13 @@
     }
   },
   "ProductSection": {
-    "badge": "Free download",
-    "title": "Food Cost Tracker",
+    "badge": "Food Cost Tracker",
+    "title": "You know what you sold. Do you know what it cost to make?",
     "subtitle": "Weekly food cost control. Integrated waste tracking. Automatic alerts.",
+    "price": "€29",
+    "cta_buy": "Buy — €29",
+    "cta_soon": "Coming soon",
+    "cta_note": "Available in ES, EN, DE · Instant download",
     "cta_lang_es": "Español",
     "cta_lang_en": "English",
     "cta_lang_de": "Deutsch",
@@ -448,6 +452,17 @@
     "slide_2": "The waste you don't log is the cost you don't see in your margin.",
     "slide_3": "Weekly control by category — meat, fish, produce — in one file.",
     "slide_4": "Automatic alert when food cost exceeds your target. No manual formulas.",
-    "slide_5": "Update a price in Suppliers and it propagates to the entire tracker."
+    "slide_5": "Update a price in Suppliers and it propagates to the entire tracker.",
+    "gracias": {
+      "title_es": "¡Listo! Elegí tu idioma",
+      "title_en": "Done! Choose your language",
+      "title_de": "Fertig! Wähle deine Sprache",
+      "subtitle_es": "El archivo se descarga inmediatamente.",
+      "subtitle_en": "The file downloads immediately.",
+      "subtitle_de": "Die Datei wird sofort heruntergeladen.",
+      "missing_order_title": "We couldn't find your order.",
+      "missing_order_body": "If you just purchased, check the confirmation email for the link.",
+      "back_home": "Back to home"
+    }
   }
 }

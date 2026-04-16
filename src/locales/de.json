@@ -438,9 +438,13 @@
     }
   },
   "ProductSection": {
-    "badge": "Kostenloser Download",
-    "title": "Food Cost Tracker",
+    "badge": "Food Cost Tracker",
+    "title": "Du weißt, was du verkauft hast. Weißt du, was es gekostet hat?",
     "subtitle": "Wöchentliche Kostenkontrolle. Schwund integriert. Automatische Alarme.",
+    "price": "€29",
+    "cta_buy": "Kaufen — €29",
+    "cta_soon": "Demnächst verfügbar",
+    "cta_note": "Verfügbar auf ES, EN, DE · Sofortiger Download",
     "cta_lang_es": "Español",
     "cta_lang_en": "English",
     "cta_lang_de": "Deutsch",
@@ -448,6 +452,17 @@
     "slide_2": "Schwund, den du nicht erfasst, ist Kosten, die du in deiner Marge nicht siehst.",
     "slide_3": "Wöchentliche Kontrolle nach Kategorie — Fleisch, Fisch, Gemüse — in einer Datei.",
     "slide_4": "Automatischer Alarm, wenn die Food-Cost-Quote dein Ziel überschreitet.",
-    "slide_5": "Preis in Lieferanten aktualisieren — wird im gesamten Tracker übernommen."
+    "slide_5": "Preis in Lieferanten aktualisieren — wird im gesamten Tracker übernommen.",
+    "gracias": {
+      "title_es": "¡Listo! Elegí tu idioma",
+      "title_en": "Done! Choose your language",
+      "title_de": "Fertig! Wähle deine Sprache",
+      "subtitle_es": "El archivo se descarga inmediatamente.",
+      "subtitle_en": "The file downloads immediately.",
+      "subtitle_de": "Die Datei wird sofort heruntergeladen.",
+      "missing_order_title": "Wir konnten deine Bestellung nicht finden.",
+      "missing_order_body": "Wenn du gerade gekauft hast, schau in die Bestätigungs-Mail für den Link.",
+      "back_home": "Zurück zur Startseite"
+    }
   }
 }
