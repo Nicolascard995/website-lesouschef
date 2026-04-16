@@ -407,7 +407,8 @@
       "cta_sending": "Senden…",
       "privacy_note": "Kein Spam. Wir schreiben nur, wenn wir Le Sous Chef öffnen oder etwas Konkretes und Nützliches für deinen Betrieb haben.",
       "error": "Wir konnten deine Diagnose nicht senden. In einer Minute bitte erneut versuchen.",
-      "rate_limit": "Wir haben heute bereits eine Diagnose an diese Adresse geschickt. Schau in dein Postfach."
+      "rate_limit": "Wir haben heute bereits eine Diagnose an diese Adresse geschickt. Schau in dein Postfach.",
+      "skip": "Ergebnis ohne Speichern anzeigen"
     },
     "results": {
       "eyebrow": "Deine Diagnose",

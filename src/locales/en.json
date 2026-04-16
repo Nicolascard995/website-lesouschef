@@ -407,7 +407,8 @@
       "cta_sending": "Sending…",
       "privacy_note": "No spam. We only write when we open access to Le Sous Chef or have something concrete and useful for your operation.",
       "error": "We couldn't send your diagnosis. Try again in a minute.",
-      "rate_limit": "We already sent a diagnosis to that email today. Check your inbox."
+      "rate_limit": "We already sent a diagnosis to that email today. Check your inbox.",
+      "skip": "See result without saving"
     },
     "results": {
       "eyebrow": "Your diagnosis",

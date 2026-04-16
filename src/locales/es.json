@@ -407,7 +407,8 @@
       "cta_sending": "Enviando…",
       "privacy_note": "Sin spam. Te escribimos solo si abrimos acceso a Le Sous Chef o tenemos algo concreto y útil para tu operación.",
       "error": "No pudimos enviarte el diagnóstico. Probá de nuevo en un minuto.",
-      "rate_limit": "Ya enviamos un diagnóstico a ese correo hoy. Revisá tu bandeja."
+      "rate_limit": "Ya enviamos un diagnóstico a ese correo hoy. Revisá tu bandeja.",
+      "skip": "Ver resultado sin guardar"
     },
     "results": {
       "eyebrow": "Tu diagnóstico",
