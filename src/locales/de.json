@@ -307,5 +307,125 @@
     "back": "Zurück",
     "next": "Weiter",
     "finish": "Bewerbung Absenden"
+  },
+  "Errors": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Ein unerwarteter Fehler ist aufgetreten. Unser Team wurde bereits benachrichtigt.",
+    "retry": "Erneut versuchen",
+    "notFound_title": "Seite nicht gefunden",
+    "notFound_description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "notFound_back": "Zurück zur Startseite"
+  },
+  "Diagnostico": {
+    "meta": {
+      "title": "Betriebsdiagnose — Le Sous Chef",
+      "description": "20 Fragen. Deine Küche antwortet. Ein ehrlicher Blick darauf, wo du stabil bist und wo die Marge leckt."
+    },
+    "intro": {
+      "eyebrow": "BETRIEBSDIAGNOSE",
+      "title": "20 Fragen. Deine Küche antwortet.",
+      "description": "Ein ehrlicher Durchgang durch sechs operative Bereiche deines Restaurants. Am Ende siehst du, wo du stabil bist und wo die Marge leckt. Kein Rauch. Keine Anmeldung.",
+      "bullets": {
+        "0": "20 Fragen in sechs Bereichen: Kosten, Küche, Service, Team, Digital, Recht.",
+        "1": "Sechs bis acht Minuten. Du kannst zwischen den Services vom Handy antworten.",
+        "2": "Das Ergebnis kommt per Mail. Wir speichern nur deine Adresse und dein Ergebnis."
+      },
+      "time_note": "6–8 Min · 20 Fragen · 4 mögliche Antworten",
+      "cta_start": "Diagnose starten"
+    },
+    "progress": {
+      "area_of": "Bereich {current} von {total}",
+      "question_of": "Frage {current} von {total}"
+    },
+    "answers": {
+      "yes": "Ja",
+      "partial": "Teilweise",
+      "no": "Nein",
+      "dk": "Weiß nicht"
+    },
+    "areas": {
+      "costos": {
+        "name": "Kosten",
+        "description": "Rezepturkalkulation, Food Cost und echte Marge."
+      },
+      "cocina": {
+        "name": "Küche",
+        "description": "Pass-Rezepte, Schwund und Inventar."
+      },
+      "sala": {
+        "name": "Service",
+        "description": "Reservierungen, No-Shows und Ø Bon."
+      },
+      "equipo": {
+        "name": "Team",
+        "description": "Küchenteam, Rollen und Delegation."
+      },
+      "digital": {
+        "name": "Digital",
+        "description": "Google, Bewertungen und Direktkanal."
+      },
+      "legal": {
+        "name": "Recht",
+        "description": "Verträge, HACCP und Lizenzen."
+      }
+    },
+    "questions": {
+      "costos-1": "Hast du für jedes Gericht auf der Karte eine aktuelle Rezepturkalkulation?",
+      "costos-2": "Kennst du den echten Food Cost der letzten Woche — nicht geschätzt?",
+      "costos-3": "Prüfst du die Preise deiner Lieferanten mindestens alle 90 Tage?",
+      "costos-4": "Weißt du heute, welche drei Gerichte die geringste Marge haben?",
+      "cocina-1": "Sind die Rezepte am Pass schriftlich festgehalten und für das ganze Küchenteam zugänglich?",
+      "cocina-2": "Erfasst du Schwund und Ausschuss nach jedem Service?",
+      "cocina-3": "Stimmt dein physisches Inventar mindestens einmal pro Monat mit dem digitalen überein?",
+      "sala-1": "Misst du No-Shows und Stornos pro Reservierungskanal?",
+      "sala-2": "Ist deine Reservierungs- und Anzahlungsrichtlinie schriftlich festgehalten und wird vom gesamten Service angewandt?",
+      "sala-3": "Kennst du den Ø Bon pro Service dieser Woche, ohne zehn Dateien zu öffnen?",
+      "equipo-1": "Hat jede Station pro Schicht eine klare verantwortliche Person?",
+      "equipo-2": "Kannst du einen ganzen Service übergeben, ohne selbst am Pass zu stehen?",
+      "equipo-3": "Dauert das Onboarding eines neuen Kochs weniger als eine Woche?",
+      "equipo-4": "Weiß das Team, was zu tun ist, wenn du oder die Küchenchefin einen Tag ausfallen?",
+      "digital-1": "Ist dein Google-Unternehmensprofil aktuell: Öffnungszeiten, Karte und Fotos der letzten 60 Tage?",
+      "digital-2": "Beantwortest du Bewertungen, gute wie schlechte, innerhalb von 48 Stunden?",
+      "digital-3": "Weißt du jeden Monat, welcher Kanal dir die meisten Direktreservierungen bringt?",
+      "legal-1": "Sind Verträge und tatsächliche Arbeitszeiten des Teams aktuell?",
+      "legal-2": "Sind HACCP und Allergenrückverfolgbarkeit dokumentiert und zugänglich?",
+      "legal-3": "Bist du bei Lizenzen, Versicherungen und Gewerbeanmeldungen auf dem neuesten Stand?"
+    },
+    "nav": {
+      "back": "Zurück",
+      "next": "Weiter",
+      "finish": "Diagnose anzeigen"
+    },
+    "capture": {
+      "eyebrow": "Letzter Schritt",
+      "title": "An welche Adresse schicken wir deine Diagnose?",
+      "description": "Wir speichern nur deine Adresse und dein Ergebnis. Wir geben nichts weiter und fluten dein Postfach nicht.",
+      "email_label": "E-Mail",
+      "email_placeholder": "du@email.com",
+      "cta": "Diagnose senden",
+      "cta_sending": "Senden…",
+      "privacy_note": "Kein Spam. Wir schreiben nur, wenn wir Le Sous Chef öffnen oder etwas Konkretes und Nützliches für deinen Betrieb haben.",
+      "error": "Wir konnten deine Diagnose nicht senden. In einer Minute bitte erneut versuchen.",
+      "rate_limit": "Wir haben heute bereits eine Diagnose an diese Adresse geschickt. Schau in dein Postfach."
+    },
+    "results": {
+      "eyebrow": "Deine Diagnose",
+      "title": "So steht dein Betrieb heute.",
+      "score_label": "Gesamtpunktzahl",
+      "score_suffix": "von {total}",
+      "weak_title": "Wo die Marge leckt",
+      "weak_description": "Die Bereiche mit der niedrigsten Punktzahl bringen dir am schnellsten Geld zurück, wenn du sie zuerst ordnest.",
+      "strong_title": "Wo du stabil bist",
+      "no_weak": "Nichts ist im roten Bereich. Deine operative Basis ist in Ordnung.",
+      "sent_note": "Wir haben das Ergebnis auch an {email} geschickt.",
+      "cta_primary": "Sag Bescheid, wenn Le Sous Chef öffnet",
+      "cta_secondary": "Zurück zur Seite"
+    },
+    "teaser": {
+      "eyebrow": "BETRIEBSDIAGNOSE · KOSTENLOS",
+      "title": "20 Fragen. Deine Küche antwortet.",
+      "description": "Sechs operative Bereiche. Sechs oder sieben Minuten. Eine ehrliche Diagnose, wo du stabil bist und wo die Marge leckt.",
+      "cta": "Diagnose starten"
+    }
   }
 }
