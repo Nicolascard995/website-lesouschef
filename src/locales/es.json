@@ -331,7 +331,8 @@
         "2": "El resultado te llega por correo. Guardamos solo tu email y tu puntaje."
       },
       "time_note": "6–8 min · 20 preguntas · 4 respuestas posibles",
-      "cta_start": "Empezar diagnóstico"
+      "cta_start": "Empezar diagnóstico",
+      "back_to_lang": "← Cambiar idioma"
     },
     "progress": {
       "area_of": "Área {current} de {total}",

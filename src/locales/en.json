@@ -331,7 +331,8 @@
         "2": "The result lands in your inbox. We only keep your email and your score."
       },
       "time_note": "6–8 min · 20 questions · 4 possible answers",
-      "cta_start": "Start audit"
+      "cta_start": "Start audit",
+      "back_to_lang": "← Change language"
     },
     "progress": {
       "area_of": "Area {current} of {total}",

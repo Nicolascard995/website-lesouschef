@@ -331,7 +331,8 @@
         "2": "Das Ergebnis kommt per Mail. Wir speichern nur deine Adresse und dein Ergebnis."
       },
       "time_note": "6–8 Min · 20 Fragen · 4 mögliche Antworten",
-      "cta_start": "Diagnose starten"
+      "cta_start": "Diagnose starten",
+      "back_to_lang": "← Sprache ändern"
     },
     "progress": {
       "area_of": "Bereich {current} von {total}",
