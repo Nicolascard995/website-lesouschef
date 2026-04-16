@@ -429,6 +429,12 @@
       "title": "20 preguntas. Tu cocina responde.",
       "description": "Seis áreas operativas. Seis o siete minutos. Un diagnóstico honesto de dónde estás sólido y dónde se te escapa margen.",
       "cta": "Empezar diagnóstico"
+    },
+    "email": {
+      "subject": "Tu diagnóstico operativo — Le Sous Chef",
+      "preheader": "Tu puntaje y las áreas donde se te escapa el margen.",
+      "heading": "Acá está tu diagnóstico operativo.",
+      "outro": "Si querés que te avisemos cuando abra Le Sous Chef, respondé a este correo o usá el botón de abajo."
     }
   }
 }

@@ -429,6 +429,12 @@
       "title": "20 questions. Your kitchen answers.",
       "description": "Six operational areas. Six or seven minutes. An honest read of where you're solid and where margin is leaking.",
       "cta": "Start audit"
+    },
+    "email": {
+      "subject": "Your operational audit — Le Sous Chef",
+      "preheader": "Your score and where margin is leaking.",
+      "heading": "Here's your operational audit.",
+      "outro": "If you want a heads-up when Le Sous Chef opens, just reply to this email or tap the button below."
     }
   }
 }

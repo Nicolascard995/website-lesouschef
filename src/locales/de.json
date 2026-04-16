@@ -429,6 +429,12 @@
       "title": "20 Fragen. Deine Küche antwortet.",
       "description": "Sechs operative Bereiche. Sechs oder sieben Minuten. Eine ehrliche Diagnose, wo du stabil bist und wo die Marge leckt.",
       "cta": "Diagnose starten"
+    },
+    "email": {
+      "subject": "Deine Betriebsdiagnose — Le Sous Chef",
+      "preheader": "Deine Punktzahl und wo die Marge leckt.",
+      "heading": "Hier ist deine Betriebsdiagnose.",
+      "outro": "Wenn du Bescheid bekommen willst, sobald Le Sous Chef öffnet, antworte auf diese Mail oder klick auf den Button unten."
     }
   }
 }
