@@ -3,57 +3,16 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 
 const SLIDE_INTERVAL_MS = 3500;
-const LOADING_RESET_MS = 1500;
 const SLIDE_COUNT = 5;
-const LANGS = ['es', 'en', 'de'] as const;
-type Lang = (typeof LANGS)[number];
-
-type LangOption = {
-    lang: Lang;
-    code: string;
-    labelKey: 'cta_lang_es' | 'cta_lang_en' | 'cta_lang_de';
-};
-
-const OPTIONS: readonly LangOption[] = [
-    { lang: 'es', code: 'ES', labelKey: 'cta_lang_es' },
-    { lang: 'en', code: 'EN', labelKey: 'cta_lang_en' },
-    { lang: 'de', code: 'DE', labelKey: 'cta_lang_de' },
-];
-
-function Spinner() {
-    return (
-        <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            className="animate-spin"
-            aria-hidden="true"
-        >
-            <circle
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeOpacity="0.25"
-                strokeWidth="2"
-            />
-            <path
-                d="M22 12a10 10 0 0 1-10 10"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-            />
-        </svg>
-    );
-}
+const CHECKOUT_URL = process.env.NEXT_PUBLIC_LEMONSQUEEZY_CHECKOUT_URL;
+const MOCKUP_SRC = '/images/food-cost-tracker-mockup.png';
 
 export default function ProductSection() {
     const t = useTranslations('ProductSection');
     const [slide, setSlide] = useState(0);
-    const [loadingLang, setLoadingLang] = useState<Lang | null>(null);
 
     useEffect(() => {
         const id = setInterval(() => {
@@ -61,13 +20,6 @@ export default function ProductSection() {
         }, SLIDE_INTERVAL_MS);
         return () => clearInterval(id);
     }, []);
-
-    function handleDownload(lang: Lang) {
-        if (loadingLang) return;
-        setLoadingLang(lang);
-        window.location.href = `/api/download/food-cost-tracker?lang=${lang}`;
-        setTimeout(() => setLoadingLang(null), LOADING_RESET_MS);
-    }
 
     const slides = [
         t('slide_1'),
@@ -77,31 +29,38 @@ export default function ProductSection() {
         t('slide_5'),
     ];
 
+    const canBuy = Boolean(CHECKOUT_URL);
+
+    function handleBuy() {
+        if (!canBuy || !CHECKOUT_URL) return;
+        window.location.href = CHECKOUT_URL;
+    }
+
     return (
         <section
-            className="bg-cream py-24 md:py-28"
+            className="bg-ink py-24 md:py-32"
             style={{
                 paddingLeft: 'clamp(20px,5vw,80px)',
                 paddingRight: 'clamp(20px,5vw,80px)',
             }}
         >
             <div className="mx-auto max-w-[1200px]">
-                <p className="mb-6 font-mono text-[11px] uppercase tracking-[0.28em] text-ink-muted">
-                    {t('badge')}
-                </p>
-
-                <div className="mb-10 flex h-60 items-center justify-center bg-cream-dark md:h-80">
-                    <span
-                        className="font-display font-light italic text-ink/40"
-                        style={{ fontSize: 'clamp(32px,4vw,48px)' }}
-                    >
-                        {t('title')}
-                    </span>
-                </div>
-
-                <div className="grid items-start gap-10 md:grid-cols-2 md:gap-16">
+                <div className="grid items-start gap-12 md:grid-cols-2 md:gap-16">
                     <div>
-                        <div className="min-h-[110px] md:min-h-[140px]">
+                        <div
+                            className="relative w-full overflow-hidden rounded-[3px] bg-ink-mid"
+                            style={{ aspectRatio: '4 / 5' }}
+                        >
+                            <Image
+                                src={MOCKUP_SRC}
+                                alt={t('title')}
+                                fill
+                                className="object-cover"
+                                sizes="(min-width: 768px) 560px, 100vw"
+                            />
+                        </div>
+
+                        <div className="mt-8 min-h-[96px]">
                             <AnimatePresence mode="wait">
                                 <motion.p
                                     key={slide}
@@ -109,14 +68,14 @@ export default function ProductSection() {
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -8 }}
                                     transition={{ duration: 0.4, ease: 'easeOut' }}
-                                    className="font-display font-light italic leading-[1.35] text-ink"
+                                    className="font-display font-light italic leading-[1.4] text-cream"
                                     style={{ fontSize: '20px' }}
                                 >
                                     {slides[slide]}
                                 </motion.p>
                             </AnimatePresence>
                         </div>
-                        <div className="mt-6 flex items-center gap-2">
+                        <div className="mt-5 flex items-center gap-2">
                             {Array.from({ length: SLIDE_COUNT }, (_, i) => (
                                 <button
                                     key={i}
@@ -124,48 +83,46 @@ export default function ProductSection() {
                                     onClick={() => setSlide(i)}
                                     aria-label={`Slide ${i + 1}`}
                                     className={`h-[6px] w-[6px] rounded-full transition-colors ${
-                                        i === slide ? 'bg-ember' : 'bg-ink-muted'
+                                        i === slide ? 'bg-ember' : 'bg-[#3D3830]'
                                     }`}
                                 />
                             ))}
                         </div>
                     </div>
 
-                    <div>
+                    <div className="flex flex-col md:pt-4">
+                        <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.28em] text-ink-muted">
+                            {t('badge')}
+                        </p>
                         <h2
-                            className="font-display font-light italic leading-[1.05] text-ink"
-                            style={{ fontSize: 'clamp(26px,3vw,28px)' }}
+                            className="mb-6 font-display font-light leading-[1.1] text-cream"
+                            style={{ fontSize: 'clamp(28px,3.4vw,40px)' }}
                         >
                             {t('title')}
                         </h2>
                         <p
-                            className="mt-3 max-w-md font-body font-light leading-[1.5] text-ink-mid"
+                            className="mb-8 max-w-md font-body font-light leading-[1.5] text-cream/70"
                             style={{ fontSize: '15px' }}
                         >
                             {t('subtitle')}
                         </p>
-                        <div className="mt-6 flex flex-col gap-2">
-                            {OPTIONS.map((opt) => {
-                                const isLoading = loadingLang === opt.lang;
-                                const disabled = loadingLang !== null && !isLoading;
-                                return (
-                                    <button
-                                        key={opt.lang}
-                                        type="button"
-                                        onClick={() => handleDownload(opt.lang)}
-                                        disabled={disabled}
-                                        className="flex items-center gap-3 rounded-[3px] border border-ink bg-transparent px-4 py-2.5 text-ink transition-colors hover:bg-ink hover:text-cream disabled:cursor-not-allowed disabled:opacity-50"
-                                    >
-                                        <span className="flex w-[22px] items-center justify-center font-mono text-[11px] uppercase tracking-[0.2em]">
-                                            {isLoading ? <Spinner /> : opt.code}
-                                        </span>
-                                        <span className="font-body text-sm font-light">
-                                            {t(opt.labelKey)}
-                                        </span>
-                                    </button>
-                                );
-                            })}
-                        </div>
+
+                        <p className="mb-6 font-mono text-xl font-medium tracking-[0.05em] text-ember">
+                            {t('price')}
+                        </p>
+
+                        <button
+                            type="button"
+                            onClick={handleBuy}
+                            disabled={!canBuy}
+                            className="w-full rounded-[3px] bg-ember px-6 py-3 text-sm font-medium text-cream transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:bg-[#3D3830] disabled:text-ink-muted disabled:hover:opacity-100"
+                        >
+                            {canBuy ? t('cta_buy') : t('cta_soon')}
+                        </button>
+
+                        <p className="mt-4 font-body text-xs font-light text-ink-muted">
+                            {t('cta_note')}
+                        </p>
                     </div>
                 </div>
             </div>
