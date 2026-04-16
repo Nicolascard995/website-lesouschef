@@ -3,6 +3,8 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
     ensureProductDownloadsSchema,
+    ensureProductPurchasesSchema,
+    findProductPurchase,
     insertProductDownload,
 } from '@/lib/product-downloads/db';
 
@@ -20,24 +22,48 @@ function filenameFor(lang: Lang): string {
 export async function GET(req: Request) {
     const url = new URL(req.url);
     const lang = url.searchParams.get('lang');
+    const orderId = url.searchParams.get('order_id');
 
     if (!isValidLang(lang)) {
         return NextResponse.json({ error: 'Invalid lang' }, { status: 400 });
+    }
+
+    if (!orderId) {
+        return NextResponse.json({ error: 'Payment required' }, { status: 403 });
+    }
+
+    await ensureProductPurchasesSchema();
+
+    const purchase = await findProductPurchase(orderId);
+    if (!purchase) {
+        return NextResponse.json({ error: 'Order not found' }, { status: 403 });
+    }
+    if (purchase.status !== 'paid') {
+        return NextResponse.json({ error: 'Payment pending' }, { status: 403 });
     }
 
     await ensureProductDownloadsSchema();
 
     const ip = req.headers.get('x-forwarded-for');
     const userAgent = req.headers.get('user-agent');
-    await insertProductDownload({ lang, ip, userAgent });
+    await insertProductDownload({ lang, ip, userAgent, orderId });
 
-    const filePath = path.join(process.cwd(), 'public', 'downloads', filenameFor(lang));
+    const filePath = path.join(
+        process.cwd(),
+        'public',
+        'downloads',
+        filenameFor(lang),
+    );
 
     let buffer: Buffer;
     try {
         buffer = await readFile(filePath);
     } catch (e) {
-        console.error('[download:food-cost-tracker] readFile failed:', filePath, e);
+        console.error(
+            '[download:food-cost-tracker] readFile failed:',
+            filePath,
+            e,
+        );
         return NextResponse.json({ error: 'File not found' }, { status: 404 });
     }
 
