@@ -1,5 +1,5 @@
 {
-  "name": "dozo_tech",
+  "name": "website-lesouschef",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.95.3",
+    "@neondatabase/serverless": "^1.0.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.33.0",
     "geist": "^1.7.0",
