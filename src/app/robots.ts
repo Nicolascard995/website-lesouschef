@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://dozo.tech/sitemap.xml',
+        sitemap: 'https://lesouschef.com/sitemap.xml',
     };
 }

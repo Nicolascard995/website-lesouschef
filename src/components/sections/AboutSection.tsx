@@ -18,7 +18,7 @@ export default function AboutSection() {
                 <ScrollReveal mode="zoom">
                     <div className="relative w-full max-w-[520px] aspect-[3/4] overflow-hidden rounded-[28px] bg-ink">
                         <Image
-                            src="/images/consultant_profile.png"
+                            src="/images/consultant_profile.jpg"
                             alt="Le Sous Chef"
                             fill
                             priority

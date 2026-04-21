@@ -64,7 +64,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
  <span>•</span>
  <span>
  {/* Simple read time estimation: ~200 words per minute */}
- {Math.ceil(post.translation.content.split(/\s+/).length / 200)} min read
+ {Math.ceil((post.translation.content?.split(/\s+/).length || 0) / 200)} min read
  </span>
  </div>
  </header>
@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
 
  {/* Content */}
  <div className="prose prose-invert prose-lg md:prose-xl max-w-none">
- <MDXRemote source={post.translation.content} components={components} />
+ <MDXRemote source={post.translation.content || ''} components={components} />
  </div>
 
  {/* Footer Section of Article */}

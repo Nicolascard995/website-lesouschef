@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://dozo.tech';
+    const baseUrl = 'https://lesouschef.com';
 
     // Core pages
     const routes = [''];

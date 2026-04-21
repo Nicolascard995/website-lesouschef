@@ -26,30 +26,31 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
  businessName: ""
  });
 
+ const [loading, setLoading] = useState(false);
+ const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
  if (!isOpen) return null;
 
  const totalSteps = 4;
+
+ const handleSubmit = async () => {
+ setLoading(true);
+ setErrorMsg(null);
+ const result = await submitControlQualifyLead(formData);
+ setLoading(false);
+
+ if (result.success) {
+ setStep(100);
+ } else {
+ setErrorMsg(result.error || t("error_generic"));
+ }
+ };
 
  const handleNext = () => {
  if (step < totalSteps) {
  setStep(prev => prev + 1);
  } else {
  handleSubmit();
- }
- };
-
- const [loading, setLoading] = useState(false);
-
- const handleSubmit = async () => {
- setLoading(true);
- const result = await submitControlQualifyLead(formData);
- setLoading(false);
-
- if (result.success) {
- console.log("Control Qualify Lead:", formData);
- setStep(100);
- } else {
- alert("Error: " + (result.error || "Unknown error occurred"));
  }
  };
 
@@ -304,7 +305,13 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
 
  {/* Footer / Navigation */}
  {step > 0 && step < 100 && (
- <div className="p-6 border-t border-white/5 bg-white/5 backdrop-blur-md flex justify-between items-center">
+ <div className="p-6 border-t border-white/5 bg-white/5 backdrop-blur-md flex flex-col gap-3">
+ {errorMsg && (
+ <div role="alert" className="text-sm text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2">
+ {errorMsg}
+ </div>
+ )}
+ <div className="flex justify-between items-center">
  <button
  onClick={() => setStep(prev => prev - 1)}
  className="text-slate-500 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest"
@@ -321,6 +328,7 @@ export default function ControlQualifyModal({ isOpen, onClose }: ControlQualifyM
  >
  {loading ? "SENDING..." : (step === totalSteps ? t("finish") : t("next"))}
  </button>
+ </div>
  </div>
  )}
  </motion.div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Error({
  error,
@@ -9,23 +10,25 @@ export default function Error({
  error: Error & { digest?: string };
  reset: () => void;
 }) {
+ const t = useTranslations('Errors');
+
  useEffect(() => {
  console.error(error);
  }, [error]);
 
  return (
  <div className="min-h-screen bg-cream flex flex-col items-center justify-center p-6 text-center">
- <h2 className="text-2xl font-bold text-white mb-4">
- Algo salió mal.
+ <h2 className="text-2xl font-bold text-ink mb-4">
+ {t('title')}
  </h2>
- <p className="text-slate-400 mb-8 max-w-md">
- Ha ocurrido un error inesperado. Nuestro sistema ya ha sido notificado.
+ <p className="text-ink-muted mb-8 max-w-md">
+ {t('description')}
  </p>
  <button
  onClick={reset}
- className="px-8 py-3 bg-ink text-ink font-bold rounded-lg uppercase tracking-widest hover:bg-ink/90 transition-all"
+ className="px-8 py-3 bg-ember text-cream font-bold rounded-lg uppercase tracking-widest hover:bg-ember/90 transition-all"
  >
- Intentar de nuevo
+ {t('retry')}
  </button>
  </div>
  );
