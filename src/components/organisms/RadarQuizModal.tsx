@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight, Check, AlertTriangle, EyeOff } from "lucide-react";
 import { submitRadarQuizLead } from "@/actions/leads";
+import { useRouter } from "@/i18n/routing";
 
 interface RadarQuizModalProps {
  isOpen: boolean;
@@ -13,6 +14,7 @@ interface RadarQuizModalProps {
 
 export default function RadarQuizModal({ isOpen, onClose }: RadarQuizModalProps) {
  const t = useTranslations("RadarQuiz");
+ const router = useRouter();
  const [step, setStep] = useState(0); // 0-intro, 1..N-questions, 99-email, 100-result
  const [score, setScore] = useState(0);
  const [name, setName] = useState("");
@@ -223,7 +225,7 @@ export default function RadarQuizModal({ isOpen, onClose }: RadarQuizModalProps)
  </p>
 
  <button
- onClick={onClose} // TODO: Link to Audit
+ onClick={() => { onClose(); router.push('/diagnostico'); }}
  className={`w-full font-bold py-4 rounded-xl text-ink uppercase tracking-wide transition-all ${resultTier === 'visible' ? 'bg-ink hover:bg-ink/90' :
  resultTier === 'partial' ? 'bg-yellow-500 hover:bg-yellow-400' :
  'bg-red-500 hover:bg-red-400'

@@ -1,5 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { useState } from 'react';
 import LanguageSwitcher from '@/components/atoms/LanguageSwitcher';
 import Logo from '@/components/atoms/Logo';
@@ -46,18 +47,18 @@ export default function Footer() {
  <div>
  <h4 className="text-white font-bold mb-6">{t('nav_title')}</h4>
  <ul className="space-y-4">
- <li><a href="#metodologia" className="hover:text-ember">{tNav('methodology')}</a></li>
- <li><a href="#soluciones" className="hover:text-ember">{tNav('solutions')}</a></li>
- <li><a href="#casos" className="hover:text-ember">{tNav('cases')}</a></li>
- <li><a href="#blog" className="hover:text-ember">{tNav('blog')}</a></li>
+ <li><a href="#how-it-works" className="hover:text-ember">{tNav('how_it_works')}</a></li>
+ <li><a href="#includes" className="hover:text-ember">{tNav('solutions')}</a></li>
+ <li><a href="#about" className="hover:text-ember">{tNav('about')}</a></li>
+ <li><a href="#contact" className="hover:text-ember">{tNav('contact')}</a></li>
  </ul>
  </div>
  <div>
  <h4 className="text-white font-bold mb-6">{t('legal_title')}</h4>
  <ul className="space-y-4">
- <li><a href="#" className="hover:text-ember">{t('privacy')}</a></li>
- <li><a href="#" className="hover:text-ember">{t('terms')}</a></li>
- <li><a href="#" className="hover:text-ember">{t('founder')}</a></li>
+ <li><a href="mailto:hello@lesouschef.com" className="hover:text-ember">{t('founder')}</a></li>
+ <li><Link href="/impressum" className="hover:text-ember">{t('impressum')}</Link></li>
+ <li><Link href="/datenschutz" className="hover:text-ember">{t('privacy')}</Link></li>
  </ul>
  </div>
  </div>
