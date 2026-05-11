@@ -10,6 +10,7 @@ import DiagnosticoTeaser from '@/components/sections/DiagnosticoTeaser';
 import ProductSection from '@/components/sections/ProductSection';
 import BlogCarousel from '@/components/sections/BlogCarousel';
 import Footer from '@/components/layout/Footer';
+import { Link } from '@/i18n/routing';
 
 import { getTranslations } from 'next-intl/server';
 
@@ -60,6 +61,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-cream/42">
                         {footerLine}
                     </span>
+                </div>
+                <div className="max-w-[1200px] mx-auto mt-4 flex gap-6">
+                    <Link href="/impressum" className="font-mono text-[10px] uppercase tracking-[0.18em] text-cream/32 hover:text-cream/70 transition-colors">
+                        Impressum
+                    </Link>
+                    <Link href="/datenschutz" className="font-mono text-[10px] uppercase tracking-[0.18em] text-cream/32 hover:text-cream/70 transition-colors">
+                        Datenschutz
+                    </Link>
                 </div>
             </footer>
         </>
